@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="充值"
+        app:rightContent="查看记录"/>
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="充值金额"
+            android:textColor="@color/c_999999"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:text="¥"
+                android:textColor="@color/c_333333"
+                android:textSize="22sp"/>
+
+            <EditText
+                android:id="@+id/moneyET"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28sp"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:textColor="@color/c_333333"
+                android:textSize="18sp"
+                android:hint="请输入充值金额"
+                tools:ignore="RtlHardcoded,TextFields"
+                tools:text="100"/>
+
+            <View
+                style="@style/lineStyle"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="支付方式"
+        android:layout_marginTop="8dp"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/c_333333"
+        android:textSize="14sp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/wechatRL"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO" android:src="@mipmap/wechat_icon"/>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:text="@string/wechat_pay"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded"/>
+
+            <ImageView
+                android:id="@+id/wxCheckSDV"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO" android:src="@mipmap/noselect_circle"
+                tools:ignore="RtlHardcoded"/>
+
+            <View
+                style="@style/lineStyle"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alipayRL"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="24dp" android:contentDescription="TODO" 
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/alipay_icon"/>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:text="@string/alipay"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded"/>
+
+            <ImageView
+                android:id="@+id/alipayCheckSDV"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/noselect_circle"
+                android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/submitBTN"
+                style="@style/btnThemeStyle"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/confirm_pay"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

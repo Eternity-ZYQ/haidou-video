@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/xj_background"
+              android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xj_background"
+        app:leftIcon="@mipmap/icon_left_white"
+        app:titleTextColor="@color/white"
+        app:lineVisible="gone"
+        app:title="商品结算"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview_pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--选择默认地址-->
+                <RelativeLayout
+                    android:id="@+id/rl_default_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="6dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ico_delivery_address"
+                        android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:orientation="vertical"
+                        tools:ignore="RtlHardcoded">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                tools:text="收货人：手机麻麻"/>
+
+                            <TextView
+                                android:id="@+id/tv_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded"
+                                tools:text="18900011111"/>
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_district"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/c_999999"
+                            android:textSize="12sp"
+                            tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+                            tools:text="收货地址：北京市海定区五环到六环之间一圈汇35号1号公寓2层217"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"
+                        android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+                </RelativeLayout>
+
+                <!--没有设置地址-->
+                <RelativeLayout
+                    android:id="@+id/rl_not_data_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:text="@string/tv_address_no_data"/>
+
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"
+                        android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+                </RelativeLayout>
+
+                <!--有地址，没有默认地址-->
+                <RelativeLayout
+                    android:id="@+id/rl_select_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_select_address"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="@string/tv_select_address"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"
+                        android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="TODO" android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_address_bottom"/>
+
+                <View style="@style/lineStyle10"/>
+
+                <com.yimeng.widget.ExpandListView
+                    android:id="@+id/lv_goods_in_the_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/layout_invoice"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/dp_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="发票"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_invoice_info"
+                        android:layout_width="wrap_content"
+                        tools:text="发票信息"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="@dimen/dp_10"
+                        app:layout_constraintRight_toLeftOf="@+id/cb_invoice"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/select_check_bg"
+                        android:checked="false"
+                        android:layout_marginRight="@dimen/dp_15"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <View
+                        style="@style/lineStyle"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="支付方式"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+                <View style="@style/lineStyle"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--余额支付-->
+                    <RelativeLayout
+                        android:id="@+id/rl_yue_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/iv_yue"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:contentDescription="TODO" android:src="@mipmap/zhifu_yue"
+                            tools:ignore="RtlHardcoded"/>
+
+                        <TextView
+                            android:id="@+id/tv_yue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/iv_yue"
+                            android:text="余额支付(0)"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            tools:ignore="RelativeOverlap,RtlHardcoded"/>
+
+                        <View
+                            android:id="@+id/view_sel_yue"
+                            android:layout_width="@dimen/dp_60"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+                        <ImageView
+                            android:id="@+id/checkbox_yue_normal"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            android:contentDescription="TODO" android:src="@mipmap/select_circle"
+                            tools:ignore="RtlHardcoded"/>
+                    </RelativeLayout>
+
+                    <View style="@style/lineStyle"/>
+
+                    <!--微信支付 -->
+                    <RelativeLayout
+                        android:id="@+id/rl_wechat_pay"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="48dp">
+
+                        <ImageView
+                            android:id="@+id/sdv_wechat_pay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:contentDescription="TODO" android:src="@mipmap/homepage_wechat"
+                            tools:ignore="RtlHardcoded"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/sdv_wechat_pay"
+                            android:text="微信支付"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            tools:ignore="RtlHardcoded"/>
+
+                        <FrameLayout
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                            <ImageView
+                                android:id="@+id/checkbox_wechat_pay_normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                tools:background="@mipmap/noselect_circle"
+                                android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+                        </FrameLayout>
+
+                    </RelativeLayout>
+
+                    <View style="@style/lineStyle"/>
+
+                    <!--支付宝支付-->
+                    <RelativeLayout
+                        android:id="@+id/rl_alipay"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/sdv_alipay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:background="@mipmap/homepage_alipay"
+                            android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/sdv_alipay"
+                            android:text="支付宝支付"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            tools:ignore="RtlHardcoded"/>
+
+                        <FrameLayout
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                            <ImageView
+                                android:id="@+id/checkbox_alipay_normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                tools:background="@mipmap/noselect_circle"
+                                android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+                        </FrameLayout>
+
+                    </RelativeLayout>
+
+                    <View style="@style/lineStyle"/>
+
+                    <!--代金券-->
+                    <RelativeLayout
+                        android:id="@+id/couponRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_coupon"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:background="@mipmap/ico17_account2"
+                            android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+
+                        <TextView
+                            android:id="@+id/tv_coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/iv_coupon"
+                            android:text="代金券(前往选择可用的代金券)"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            tools:ignore="RelativeOverlap,RtlHardcoded"/>
+
+                        <View
+                            android:id="@+id/view_sel_coupon"
+                            android:layout_width="@dimen/dp_60"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+                        <ImageView
+                            android:id="@+id/checkbox_coupon_normal"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@mipmap/noselect_circle"
+                            android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+                    </RelativeLayout>
+
+                    <View style="@style/lineStyle"/>
+
+                    <!--分期支付-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_fenqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:background="@mipmap/homepage_alipay"
+                            android:contentDescription="TODO" android:visibility="invisible"
+                            tools:ignore="RtlHardcoded"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/iv_fenqi"
+                            android:text="分期支付  (即将开放)"
+                            android:textColor="@color/c_999999"
+                            android:textSize="14sp"
+                            tools:ignore="RtlHardcoded"/>
+
+                        <FrameLayout
+                            android:id="@+id/fl_fenqi"
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                            <ImageView
+                                android:id="@+id/checkbox_fenqi_normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@mipmap/noselect_circle"
+                                android:contentDescription="TODO" tools:ignore="RtlHardcoded"/>
+                        </FrameLayout>
+
+                    </RelativeLayout>
+
+                    <View style="@style/lineStyle10"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="TODO" android:src="@mipmap/ico_postage"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:textSize="14sp"
+                        android:text="运费"/>
+
+                    <TextView
+                        android:id="@+id/tv_postage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥0.00"
+                        android:layout_marginEnd="16dp"
+                        android:textColor="@color/c_money"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="#444851"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:id="@+id/tv_consumption_beans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:text="100+199麻豆"/>
+
+                <TextView
+                    android:id="@+id/payMoneyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:textSize="14sp"
+                    tools:text="需支付:1000元"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitRL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/view_center"
+                android:layout_weight="2"
+                android:background="@drawable/select_btn_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="确认支付"
+                android:textColor="@color/select_login_text_color"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

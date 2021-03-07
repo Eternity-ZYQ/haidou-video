@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:bl_corners_radius="@dimen/dp_10"
+    app:bl_shape="rectangle"
+    app:bl_solid_color="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="种子挂卖"
+        android:textColor="@color/c_333333"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_seed_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前市价￥0.0/颗"
+        android:textColor="@color/c_333333"/>
+
+    <EditText
+        android:id="@+id/et_count"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="请输入数量（最多1颗）"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tv_seed_price_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_money"
+        tools:text="￥0.00"/>
+
+    <View style="@style/lineStyle"
+          android:layout_marginTop="@dimen/dp_15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal">
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:padding="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="再等等"
+            app:bl_pressed_solid_color="@color/ripple"
+            app:bl_unPressed_solid_color="@color/white"
+            android:textColor="@color/theme_color"
+            app:bl_corners_bottomLeftRadius="@dimen/dp_10"/>
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/c_cccccc"/>
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确认"
+            android:padding="0dp"
+            app:bl_pressed_solid_color="@color/ripple"
+            app:bl_unPressed_solid_color="@color/white"
+            android:textColor="@color/theme_color"
+            app:bl_corners_bottomRightRadius="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+
+</com.noober.background.view.BLLinearLayout>

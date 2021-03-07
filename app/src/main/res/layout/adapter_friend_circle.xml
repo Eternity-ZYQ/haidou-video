@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.huige.library.widget.CircleImageView
+        android:id="@+id/civ_user_head"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_margin="@dimen/dp_15"
+        android:src="@color/c_cccccc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        tools:text="@string/app_name"
+        android:textColor="@color/c_333333"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintTop_toTopOf="@id/civ_user_head"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        tools:text="2010-10-10 10:10:10"
+        android:textColor="@color/c_999999"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/civ_user_head"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name"/>
+
+    <TextView
+        android:id="@+id/tv_discuss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        tools:text="孕期3个月翻来覆去睡不着啊，谁能够分享一下该怎么办啊？\n孕期3个月翻来覆去睡不着啊，谁能够分享一下该怎么办啊？孕期3个月翻来覆去睡不着啊，谁能够分享一下该怎么办啊？"
+        android:textColor="@color/c_333333"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"/>
+
+    <LinearLayout
+        android:id="@+id/ll_article"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_80"
+        android:background="@color/app_background"
+        android:layout_margin="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_discuss"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_article_pic"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@mipmap/loading_place"
+            android:contentDescription="TODO" android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/tv_article_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@color/c_333333"
+            android:layout_marginStart="@dimen/dp_10"
+            tools:text="文章标题文章标题文标题章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!--图片-->
+    <LinearLayout
+        android:id="@+id/layout_images"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_article">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:visibility="gone"
+            android:contentDescription="TODO" android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:visibility="gone"
+            android:contentDescription="TODO" android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:visibility="gone"
+            android:contentDescription="TODO" android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_discuss_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_15"
+        android:drawableLeft="@mipmap/homepage_pinglunshu"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:text="评论 0"
+        android:textColor="@color/c_999999"
+        android:textSize="12sp"
+        android:layout_marginBottom="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/cb_praise_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_15"
+        android:button="@null"
+        android:drawableLeft="@drawable/select_praise_bg"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:text="赞 0"
+        android:textColor="@color/select_praise_text_color"
+        android:textSize="12sp"
+        android:layout_marginBottom="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_discuss_num"/>
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="@id/cb_praise_num"
+        app:layout_constraintTop_toTopOf="@id/cb_praise_num"
+        app:layout_constraintRight_toLeftOf="@id/cb_praise_num"
+        android:textColor="@color/c_999999"
+        android:drawableLeft="@mipmap/icon_share"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/dp_5"
+        android:textSize="12sp"
+        android:text="分享"/>
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="@id/tv_share"
+        app:layout_constraintTop_toTopOf="@id/tv_share"
+        app:layout_constraintRight_toLeftOf="@id/tv_share"
+        android:textColor="@color/c_999999"
+        android:drawableLeft="@mipmap/shangjia_qingkong"
+        android:drawablePadding="@dimen/dp_5"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        tools:visibility="visible"
+        android:text="删除"/>
+
+    <View style="@style/lineStyle"
+          android:layout_marginTop="@dimen/dp_50"
+          app:layout_goneMarginTop="@dimen/dp_20"
+          app:layout_constraintTop_toBottomOf="@id/layout_images"
+          app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

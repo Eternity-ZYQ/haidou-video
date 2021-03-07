@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xj_background"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/civ_user_head"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_margin="@dimen/dp_15"
+        android:contentDescription="TODO" android:src="@color/c_cccccc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        tools:text="用户xxx"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintTop_toTopOf="@id/civ_user_head"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        tools:text="2018-10-10 10:10:10"
+        android:textColor="#bbbbbb"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/civ_user_head"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name"/>
+
+
+    <com.yimeng.widget.RatingStat.RatingStarView
+        android:id="@+id/gradeRSV"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        app:rsv_cornerRadius="4dp"
+        android:layout_marginRight="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="@id/civ_user_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/civ_user_head"
+        app:drawStrokeForEmptyStar="false"
+        app:drawStrokeForHalfStar="true"
+        app:enableSelectRating="false"
+        app:rating="5"
+        app:starBackgroundColor="#d6d6d6"
+        app:starForegroundColor="#fed03c"
+        app:starMargin="3dp"
+        app:starNum="5"
+        app:starThickness="0.7"
+        app:strokeColor="#457DD7"
+        app:rsv_strokeWidth="1px"
+        tools:ignore="RtlHardcoded"/>
+
+    <TextView
+        android:id="@+id/tv_discuss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        tools:text="少嘎哈公安和噶会阿黑哥爱好刚好阿纲啊尬\n啊哈哈个哦哈哦发货个"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/layout_images"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ_user_head"/>
+
+    <!--评论图片-->
+    <LinearLayout
+        android:id="@+id/layout_images"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_discuss"
+        app:layout_goneMarginTop="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#E5E5E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/civ_user_head"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/clickRL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="12dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/goodsSDV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="TODO" android:scaleType="centerCrop"
+            tools:background="@mipmap/ic_launcher"
+            tools:ignore="RtlHardcoded" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/goodsSDV"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="84dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"
+                tools:ignore="RelativeOverlap"
+                tools:text="@string/app_name" />
+
+            <LinearLayout
+                style="@style/WrapWrap.Horizontal"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="¥"
+                    android:textColor="#FE3C3C"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/describeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FE3C3C"
+                    android:textSize="14sp"
+                    tools:text="60" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="x1"
+                android:textColor="@color/c_999999"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:contentDescription="TODO" android:src="@mipmap/jiaobiao_changcu"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

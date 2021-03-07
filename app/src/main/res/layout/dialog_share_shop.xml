@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center"
+        android:text="分享收益到商圈"
+        android:textColor="@color/c_333333"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/frame_content"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@mipmap/bg2_wodedianpu">
+
+            <com.huige.library.widget.CircleImageView
+                android:id="@+id/civ_shop_logo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="@dimen/dp_20"
+                android:src="@color/c_cccccc"
+                app:civ_border_color="#604d47"
+                app:civ_border_width="@dimen/dp_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="雷布斯"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_shop_address"
+                app:layout_constraintLeft_toRightOf="@id/civ_shop_logo"
+                app:layout_constraintTop_toTopOf="@id/civ_shop_logo"/>
+
+            <TextView
+                android:id="@+id/tv_shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:drawableLeft="@mipmap/ico13_dingwei"
+                android:drawablePadding="@dimen/dp_5"
+                android:text="龙华地铁站"
+                android:textColor="#b49074"
+                app:layout_constraintBottom_toBottomOf="@id/civ_shop_logo"
+                app:layout_constraintLeft_toRightOf="@id/civ_shop_logo"
+                app:layout_constraintTop_toBottomOf="@id/tv_shopName"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:drawableLeft="@mipmap/ico10_leijishouru"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="累计收益"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_predict_money_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="¥0.00"
+                android:textColor="@color/c_333333"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_predict_money_today"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_predict_money_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginEnd="50dp"
+                android:text="总订单 0"
+                android:textColor="#ff7038"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_predict_money_sum"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/lineStyle"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:drawableLeft="@mipmap/ico11_jinrishouru"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="今日收入"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tv_money_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="¥0.00"
+                android:textColor="@color/c_333333"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_order_today"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_order_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginEnd="50dp"
+                android:text="今日订单 0"
+                android:textColor="@color/c_blue"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_money_today"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <View style="@style/lineStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="确定分享"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_ripple"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="取消"
+            android:textColor="@color/theme_color"/>
+    </LinearLayout>
+
+</LinearLayout>

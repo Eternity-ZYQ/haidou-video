@@ -1,0 +1,226 @@
+<resources>
+    <!--<string name="app_name">jcsn</string>-->
+
+    <string name="please_get_permission">请先授予我们相应权限!</string>
+    <string name="message_permission_always_failed">为保证使用流畅, 请授予我们权限:\n\n%1$s</string>
+    <string name="net_error">网络异常，请稍后重试！</string>
+    <string name="more_str">更多</string>
+    <string name="loan_record_str">借款记录</string>
+    <string name="tab_mine">我的</string>
+    <string name="un_login">未登录, 立即登录</string>
+    <string name="audit_str">认证中心</string>
+    <string name="loan_str">额度管理</string>
+    <string name="Invite_str">邀请好友</string>
+    <string name="kefu_str">联系我们</string>
+    <string name="use_help_str">使用帮助</string>
+    <string name="message_str">消息中心</string>
+    <string name="feedback_str">意见反馈</string>
+    <string name="more_setting_str">更多设置</string>
+    <string name="please_login_str">您尚未登录</string>
+    <string name="text_network_connected_error">网络不可用，请检查手机网络连接！</string>
+    <string name="cancel">取消</string>
+
+    <string name="loan_status_title">借款详情</string>
+    <string name="loan_status">订单状态: %1$s\n%2$d元</string>
+    <string name="unit_rmb">¥ %1$d</string>
+
+    <string name="login">登录</string>
+    <string name="get_code">获取验证码</string>
+    <string name="please_input_mobile">请输入手机号码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="please_login_do">请先登录后再操作!</string>
+
+    <string name="un_audit_info">当前账户未通过认证审核, 完成认证马上申请借款!</string>
+    <string name="audit_info">已认证, 立即申请借款!</string>
+    <string name="un_audit">未认证</string>
+    <string name="audit">已认证</string>
+    <string name="identify_auth">身份认证</string>
+    <string name="please_input">请填写</string>
+    <string name="user_name">真实姓名</string>
+    <string name="idcard_str">身份证号码</string>
+    <string name="idcard_front">身份证正面照</string>
+    <string name="idcard_un_front">身份证背面照</string>
+    <string name="idcard_hand">手持身份证照</string>
+    <string name="submit_str">提交</string>
+    <string name="personal_info">个人信息</string>
+    <string name="mobile_str">手机号码</string>
+    <!--获取服务密码方法-->
+    <string name="gain_service_pass_method">
+        手机服务密码查询方法：\n
+        1.移动：拨打10086人工查询\n
+        2.联通：拨打10010人工查询\n
+        3.电信：1）拨打10000人工查询\n
+        \u3000\u3000\u3000\u30002）发送503#身份证号到10001
+    </string>
+    <string name="services_staff">
+        <![CDATA[
+            <font color="#333333" size="30px">%1$s</font>
+            <br/>
+            <font color="#999999" size="26px">%2$s</font>
+        ]]>
+    </string>
+    <!--意见反馈-->
+    <string name="tips_feedback">
+        ( *^_^* )详细描述您遇到的问题，有助于我们快速定位并解决问题。或留下您宝贵的建议或意见，我们回认真评估改进！
+    </string>
+    <string name="login_out_str">退出登录</string>
+    <string name="go_assess">立即评估</string>
+    <string name="please_faceauth">请先实名认证!</string>
+    <string name="no_auth">请先完成认证,再试试吧!</string>
+    <!--设备图片介绍-->
+    <string name="device_intro">
+        共上传2张，手机桌面截图，\"关于手机\"截图
+    </string>
+    <string name="swipe_logs">刷卡记录</string>
+    <string name="repay_logs">还款记录</string>
+    <string name="data_error">数据异常!</string>
+
+    <string name="nickname">昵称</string>
+    <string name="input_nickname">输入昵称</string>
+    <string name="gender">性别</string>
+    <string name="select_gender">选择性别</string>
+    <string name="cellphone_number">手机号</string>
+    <string name="input_cellphone">输入手机号</string>
+    <string name="truename">真实姓名</string>
+    <string name="input_idcardno">请输入身份证号</string>
+    <string name="input_truename">请输入真实姓名</string>
+    <string name="idcard_photo">身份证照</string>
+    <string name="idcard_number">身份证号码</string>
+    <string name="idcard_front_photo">请点击上传身份证正面照</string>
+    <string name="idcard_verso_photo">请点击上传身份证反面照</string>
+    <string name="photo_idcard_front_text">请上传身份证正面照片</string>
+    <string name="photo_idcard_verso_text">请上传身份证反面照片</string>
+    <string name="photo_credentials_text">请上传证件照片</string>
+    <string name="id_photo">证件照</string>
+    <string name="click_upload_idphoto">请点击上传手持身份证照</string>
+    <string name="idcard_info">实名认证</string>
+    <string name="realname_under_review">实名认证审核中</string>
+    <string name="realname_fail">实名认证失败</string>
+    <string name="realname_success">已实名认证</string>
+    <string name="my_invite_num">我的邀请(%1$d)</string>
+    <string name="recommend_use">推荐使用卡道生活</string>
+    <string name="phone_album_selection">从手机相册选择</string>
+    <string name="take_photo">拍摄照片</string>
+    <string name="request_permissions">请求基本权限</string>
+
+    <!--商城-->
+    <string name="tv_people_pay">人付款</string>
+    <string name="seach_good">搜索你想要购买的商品</string>
+    <string name="tv_search_history">历史搜索</string>
+    <string name="tv_hot_recommended">热门推荐</string>
+    <string name="tv_input_search_content">请输入搜索内容</string>
+    <string name="tv_search_not_data">没有搜索到相关商品</string>
+    <string name="tv_search_result_count">搜索结果：0条</string>
+    <string name="tv_search_result_">搜索结果：%1$s条</string>
+    <string name="tv_goods_detail_parameter">款式 规格</string>
+    <string name="tv_selected">已选</string>
+    <string name="tv_after_sales_service">售后服务</string>
+    <string name="tv_goods_parameter">产品参数</string>
+    <string name="tv_goods_pattern">款式</string>
+    <string name="btn_determine">确定</string>
+    <string name="good_not_on_sale">该商品已下架!</string>
+    <string name="tv_address_no_data">你还没有设置地址</string>
+    <string name="tv_select_address">选择地址</string>
+    <string name="tv_not_paying">未付款</string>
+    <string name="tv_not_deliver">未发货</string>
+    <string name="tv_wait_receiving">待收货</string>
+    <string name="tv_refunding">退款中</string>
+    <string name="tv_wait_evaluate">待评价</string>
+    <string name="tv_done">已完成</string>
+    <string name="tv_cancel_order">取消订单</string>
+    <string name="tv_confirm_mall_order_success">确认收货成功</string>
+    <string name="tv_cancel_mall_order_success">取消订单成功</string>
+    <string name="not_data_hint">尚未产生数据</string>
+    <string name="empty_address_hint">当前地址为空, 请添加地址</string>
+    <string name="input_consignee_name">请输入收货人姓名</string>
+    <string name="zipcode">邮政编码</string>
+    <string name="detail_addres">详细地址</string>
+    <string name="setting_default">设为默认地址</string>
+    <string name="select_address">请选择地区</string>
+    <string name="input_detail_address">请填写详细地址</string>
+    <string name="reciever_phone">收货人电话</string>
+    <string name="input_reciever_phone">请输入收货人电话</string>
+    <string name="district">地区</string>
+    <string name="select_district">请选择地区</string>
+    <string name="region">所在区域</string>
+    <string name="input_phone">请输入手机号码</string>
+    <string name="address_format">%1$s %2$s %3$s</string>
+
+    <string name="not_bankname_sub">暂未查到开户银行, 请检查数据是否正确!</string>
+    <string name="add_bank_card_fail">添加银行卡失败, 请检查是否输入正确!</string>
+    <string name="please_select">请选择</string>
+    <string name="please_select_credit_card">请选择信用卡</string>
+    <string name="please_input_credit_card_validity">请输入信用卡有效期</string>
+    <string name="please_input_credit_card_code">请输入信用卡安全码</string>
+
+    <string name="change_bankcard">修改银行卡</string>
+    <string name="account_name">账户名</string>
+    <string name="input_account_name">请输入账户名</string>
+    <string name="bank">银行</string>
+    <string name="input_bank_name">请填写银行支行全称</string>
+    <string name="bank_account">银行账号</string>
+    <string name="input_bank_account">请输入银行账号</string>
+    <string name="bank_account_hint">银行账号为16~21位</string>
+    <string name="input_bank_mobile">请输入预留手机号码</string>
+
+    <string name="proxy_del_person">确定删除代理---%1$s?</string>
+    <string name="credit_validity_str">信用卡有效期(月年:0101)</string>
+    <string name="credit_security_code">信用卡安全码(后三位:123)</string>
+
+    <string name="sendXGift">送%1$d现金财富</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="confirm_pay">确认充值</string>
+    <string name="alipay">支付宝</string>
+    <string name="personPay">%1$d人付款</string>
+    <string name="order_status_title">订单详情-%1$s</string>
+    <string name="app_token_error">您的账号在其他地方登录,请重新登录!</string>
+
+    <string name="shop_name">店铺名</string>
+    <string name="input_shopname">请填写店铺名称</string>
+    <string name="contacts">联系人</string>
+    <string name="input_contacts">请填写联系人</string>
+    <string name="phone">电话</string>
+    <string name="input_contacts_phone">请填写联系电话</string>
+    <string name="notice">公告</string>
+    <string name="input_shop_notice">请填写店铺公告</string>
+    <string name="front_photo">正面照</string>
+    <string name="info_upload_tips">请上传物质认证</string>
+    <string name="id_card_photo">身份证照片（3张）</string>
+    <string name="show_photo">展示照片（1张）</string>
+    <string name="info_photo">环境照片和营业执照（3张）</string>
+    <string name="comfire_tips">注：发送后请留意商家入驻是否开通</string>
+    <string name="info_success">资料提交成功</string>
+    <string name="please_shoot">请上传</string>
+    <string name="on_sale">销售中</string>
+    <string name="in_the_warehouse">仓库中</string>
+    <string name="under_review">审核中</string>
+    <string name="rejected">已驳回</string>
+    <string name="confirm_soldout">确认下架</string>
+    <string name="confirm_putaway">确认上架</string>
+    <string name="confirm_delect">确认删除</string>
+    <string name="input_commodity_name">请输入商品名称</string>
+    <string name="input_commodity_unit">请输入商品单位</string>
+    <string name="input_commodity_describe">输入商品描述</string>
+    <string name="input_price">请输入价格</string>
+    <string name="shoot_goods_photo">请上传商品照片</string>
+    <string name="new_order">新订单</string>
+    <string name="finished">已完成</string>
+
+    <string name="seed_count_time">还剩\n%1$d:%2$d</string>
+    <string name="pay_loading">正在支付...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_qrcodecollection">二维码收款</string>
+    <string name="str_save_qrcode">保存二维码</string>
+    <string name="str_set_amount">设置金额</string>
+    <string name="str_collection_record">收款记录</string>
+    <string name="str_i_want_to_collection">我要收款</string>
+    <string name="str_clean_amount">清除金额</string>
+    <string name="btn_determine_pay">确认支付</string>
+    <string name="str_payment">付款</string>
+
+    <string name="click_to_skip">点击跳过</string>
+    <string name="gdtslogan">GDTslogan</string>
+    <string name="splash_loading">广告加载中...</string>
+    <string name="permission_denied">请授权</string>
+</resources>

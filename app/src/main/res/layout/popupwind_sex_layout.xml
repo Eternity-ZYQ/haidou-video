@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_man"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/white_ripple"
+        android:gravity="center"
+        android:text="男"/>
+
+    <View style="@style/lineStyle"/>
+
+    <TextView
+        android:id="@+id/tv_women"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/white_ripple"
+        android:gravity="center"
+        android:text="女"/>
+
+    <View style="@style/lineStyle10"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/white_ripple"
+        android:gravity="center"
+        android:text="取消"/>
+
+</LinearLayout>

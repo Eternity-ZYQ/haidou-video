@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="提现"
+        app:rightContent="查看记录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="提现金额"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/withdraw_service_hint_tv"
+            style="@style/WrapWrap"
+            android:text="提现金额最少10元"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:text="¥"
+                android:textColor="@color/c_333333"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/moneyET"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28sp"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:textColor="@color/c_333333"
+                android:hint="0"
+                android:textSize="18sp"
+                tools:ignore="RtlHardcoded,TextFields"/>
+
+            <View style="@style/lineStyle"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/withdraw_service_charge_tv"
+                android:layout_centerVertical="true"
+                style="@style/WrapWrap"
+                android:text="实际到账扣除1%手续费"
+                android:textColor="@color/c_999999"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/withdraw_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/shape_et_line"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/c_999999"
+                android:text="全部提现"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/bankRL"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/bankInfoTV"
+                android:layout_toLeftOf="@+id/choose_bank_card_tv"
+                android:layout_toStartOf="@+id/choose_bank_card_tv"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/c_666666"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:hint="请选择银行卡" />
+
+            <ImageView
+                android:id="@+id/choose_bank_card_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/right_arrow"
+                android:contentDescription="TODO" tools:ignore="RtlHardcoded" />
+
+            <View style="@style/lineStyle"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addBankRL"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:layout_width="16dp" android:contentDescription="TODO" 
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/add" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="添加银行卡"
+                android:textColor="@color/c_666666"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/submitBTN"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                style="@style/btnThemeStyle"
+                android:text="确认提现"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order.ShopOrderActivity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="店铺订单"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/layout_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.yimeng.haidou.order.ShopOrderFragment"
+        android:id="@+id/order_shop_fragment"/>
+
+</LinearLayout>

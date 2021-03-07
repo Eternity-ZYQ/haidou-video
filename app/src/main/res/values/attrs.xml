@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ToolBar-->
+    <declare-styleable name="MyToolBar">
+        <attr name="title" format="string"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="rightContent" format="string"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightTextColor" format="color"/>
+        <attr name="android:background" format="color"/>
+        <attr name="leftIcon" format="reference"/>
+        <attr name="leftIconVisible" format="enum">
+            <enum name="gone" value="0"/>
+            <enum name="visible" value="1"/>
+        </attr>
+        <attr name="rightIcon" format="reference"/>
+        <attr name="statusBarVisible" format="enum">
+            <enum name="gone" value="0"/>
+            <enum name="visible" value="1"/>
+        </attr>
+        <attr name="lineVisible" format="enum">
+            <enum name="gone" value="0"/>
+            <enum name="visible" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+    <!--认证中心item-->
+    <declare-styleable name="AuditItemLayout">
+        <attr name="audit_type_icon" format="reference"/>
+        <attr name="audit_un_type_icon" format="reference"/>
+        <attr name="audit_title" format="string"/>
+        <attr name="audit_desc" format="string"/>
+        <attr name="is_audit_status" format="boolean"/>
+    </declare-styleable>
+
+    <!--输入的item-->
+    <declare-styleable name="InputItemLayout">
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+        <attr name="android:inputType"/>
+        <attr name="android:maxLength"/>
+        <attr name="editor" format="boolean"/>
+        <attr name="android:hint"/>
+        <attr name="android:gravity"/>
+        <attr name="EditTextColor" format="color"/>
+        <attr name="android:background" format="color"/>
+    </declare-styleable>
+
+    <!--赚呗控件-->
+    <declare-styleable name="MakeMoneyItemLayout">
+        <attr name="makeMoneyLogo" format="reference"/>
+        <attr name="makeMoneyType" format="string"/>
+        <attr name="makeMoneyDesc" format="string"/>
+        <attr name="makeMoneyEnabled" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="QRCodeView">
+        <!-- 扫描框距离toolbar底部的距离，默认值为90dp -->
+        <attr name="qrcv_topOffset" format="dimension|reference" />
+        <!-- 扫描框边角线的宽度，默认值为3dp -->
+        <attr name="qrcv_cornerSize" format="dimension|reference" />
+        <!-- 扫描框边角线的长度，默认值为20dp -->
+        <attr name="qrcv_cornerLength" format="dimension|reference" />
+        <!-- 扫描框边角线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_cornerColor" format="color|reference" />
+        <!-- 扫描框的宽度，默认值为200dp -->
+        <attr name="qrcv_rectWidth" format="dimension|reference" />
+        <!-- 条码扫样式描框的高度，默认值为140dp -->
+        <attr name="qrcv_barcodeRectHeight" format="dimension|reference" />
+        <!-- 除去扫描框，其余部分阴影颜色，默认值为#33FFFFFF -->
+        <attr name="qrcv_maskColor" format="color|reference" />
+        <!-- 扫描线的宽度，默认值为1dp -->
+        <attr name="qrcv_scanLineSize" format="dimension|reference" />
+        <!-- 扫描线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_scanLineColor" format="color|reference" />
+        <!-- 扫描线距离上下或者左右边框的间距，默认值为0dp -->
+        <attr name="qrcv_scanLineMargin" format="dimension|reference" />
+        <!-- 是否显示默认的图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultScanLineDrawable" format="boolean" />
+        <!-- 扫描线的图片资源，默认值为null -->
+        <attr name="qrcv_customScanLineDrawable" format="reference" />
+        <!-- 扫描边框的宽度，默认值为1dp -->
+        <attr name="qrcv_borderSize" format="dimension|reference" />
+        <!-- 扫描边框的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_borderColor" format="color|reference" />
+        <!-- 扫描线从顶部移动到底部的动画时间，默认值为1000 -->
+        <attr name="qrcv_animTime" format="integer" />
+        <!-- 扫描框是否垂直居中，该属性为true时会忽略qrcv_topOffset属性，默认值为false -->
+        <attr name="qrcv_isCenterVertical" format="boolean" />
+        <!-- Toolbar的高度，当有设置qrcv_isCenterVertical属性时，通过该属性来修正有Toolbar时导致扫描框垂直居中的偏差，默认值为0dp -->
+        <attr name="qrcv_toolbarHeight" format="dimension|reference" />
+        <!-- 是否是扫条形码，默认值为false -->
+        <attr name="qrcv_isBarcode" format="boolean" />
+        <!-- 扫描二维码时的提示文案，默认值为null -->
+        <attr name="qrcv_qrCodeTipText" format="string|reference" />
+        <!-- 扫描条码时的提示文案，默认值为null -->
+        <attr name="qrcv_barCodeTipText" format="string|reference" />
+        <!-- 提示文案字体大小，默认值为14sp -->
+        <attr name="qrcv_tipTextSize" format="dimension|reference" />
+        <!-- 提示文案颜色，默认值为@android:color/white -->
+        <attr name="qrcv_tipTextColor" format="color|reference" />
+        <!-- 提示文案是否在扫描框的底部，默认值为false -->
+        <attr name="qrcv_isTipTextBelowRect" format="boolean" />
+        <!-- 提示文案与扫描框之间的间距，默认值为20dp -->
+        <attr name="qrcv_tipTextMargin" format="dimension|reference" />
+        <!-- 是否把提示文案作为单行显示，默认值为false -->
+        <attr name="qrcv_isShowTipTextAsSingleLine" format="boolean" />
+        <!-- 是否显示提示文案的背景，默认值为false -->
+        <attr name="qrcv_isShowTipBackground" format="boolean" />
+        <!-- 提示文案的背景色，默认值为#22000000 -->
+        <attr name="qrcv_tipBackgroundColor" format="color|reference" />
+        <!-- 扫描线是否来回移动，默认值为true -->
+        <attr name="qrcv_isScanLineReverse" format="boolean" />
+        <!-- 是否显示默认的网格图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultGridScanLineDrawable" format="boolean" />
+        <!-- 扫描线的网格图片资源，默认值为null -->
+        <attr name="qrcv_customGridScanLineDrawable" format="reference" />
+        <!-- 是否只识别扫描框区域的二维码，默认值为false -->
+        <attr name="qrcv_isOnlyDecodeScanBoxArea" format="boolean" />
+    </declare-styleable>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否显示title-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <!--就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <declare-styleable name="MineItemLayout">
+        <attr name="milLeftIcon" format="reference"/>
+        <attr name="milContent" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcImageView">
+        <attr name="arcType" format="enum">
+            <enum name="ao" value="1"/>
+            <enum name="tu" value="-1"/>
+        </attr>
+        <attr name="arcHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="HomeMenuTypeView">
+        <attr name="HomeMenuType" format="string"/>
+        <attr name="HomeMenuIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="UploadImageView">
+        <attr name="upload_iv" format="reference"/>
+        <attr name="upload_desc" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProductToolBar">
+        <attr name="p_title" format="string"/>
+        <attr name="p_rightContent" format="string"/>
+        <attr name="p_rightTextSize" format="dimension"/>
+        <attr name="p_leftIcon" format="reference"/>
+        <attr name="p_leftIconVisible" format="enum">
+            <enum name="gone" value="0"/>
+            <enum name="visible" value="1"/>
+        </attr>
+        <attr name="p_rightIcon" format="reference"/>
+        <attr name="p_toolbarBgColor" format="color"/>
+        <attr name="p_titleTextColor" format="color"/>
+        <attr name="p_statusBar_bg_color" format="color"/>
+        <attr name="p_statusBarVisible" format="enum">
+            <enum name="visible" value="1"/>
+            <enum name="gone" value="-1"/>
+        </attr>
+        <attr name="p_lineVisible" format="enum">
+            <enum name="visible" value="1"/>
+            <enum name="gone" value="-1"/>
+        </attr>
+        <attr name="p_rightIcon2" format="reference"/>
+    </declare-styleable>
+
+
+    <!--星星-->
+    <declare-styleable name="RatingStarView">
+        <attr name="starMargin" format="integer|dimension" />
+        <attr name="rsv_cornerRadius" format="float|dimension" />
+        <attr name="starForegroundColor" format="color|reference" />
+        <attr name="starBackgroundColor" format="color|reference" />
+        <attr name="strokeColor" format="color|reference" />
+        <attr name="rsv_strokeWidth" format="float|dimension" />
+        <attr name="starNum" format="integer" />
+        <attr name="rating" format="float" />
+        <attr name="starThickness" format="float|fraction" />
+        <attr name="drawStrokeForEmptyStar" format="boolean" />
+        <attr name="drawStrokeForFullStar" format="boolean" />
+        <attr name="drawStrokeForHalfStar" format="boolean" />
+        <attr name="enableSelectRating" format="boolean" />
+        <attr name="onlyHalfStar" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NavMyFavoriteView">
+        <attr name="nav_text_one" format="string|reference"/>
+        <attr name="nav_text_two" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PwdEditText">
+        <attr name="pwdet_dot_color" format="color"/>
+        <attr name="pwdet_dot_radius" format="dimension"/>
+        <attr name="pwdet_line_color" format="color"/>
+        <attr name="pwdet_rect_color" format="color"/>
+        <attr name="pwdet_rect_corner" format="dimension"/>
+        <attr name="pwdet_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="lv_loading_color" format="color"/>
+        <attr name="lv_fail_color" format="color"/>
+        <attr name="lv_success_color" format="color"/>
+        <attr name="lv_progress_width" format="dimension"/>
+        <attr name="lv_progress_radius" format="dimension"/>
+    </declare-styleable>
+
+
+
+
+</resources>

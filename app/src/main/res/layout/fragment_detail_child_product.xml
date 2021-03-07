@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_classify"
+                android:layout_width="@dimen/dp_80"
+                android:background="#E5E5E5"
+                android:layout_height="match_parent"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_goods"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+
+        <!--底部购物车-->
+        <FrameLayout
+            android:id="@+id/layout_shopcart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="bottom"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/not_in_service_state_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="#444851"
+                android:gravity="center"
+                android:text="您当前所在位置不在店铺服务范围内"
+                android:textColor="@color/color_textcolor_red"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_to_pay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#444851"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frame_shopcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="-15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_shopcart"
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:contentDescription="TODO" android:src="@mipmap/shangjia_gouwuche"/>
+
+                    <TextView
+                        android:id="@+id/tv_product_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top"
+                        android:background="@drawable/shape_product_num_bg"
+                        android:gravity="center"
+                        android:minHeight="@dimen/dp_20"
+                        android:minWidth="@dimen/dp_20"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_sum_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_weight="1"
+                    android:text="¥999"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+
+                <Button
+                    android:id="@+id/btn_settle_accounts"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/theme_color"
+                    android:minWidth="130dp"
+                    android:text="去结算"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/app_background</item>
+
+    </style>
+
+    <!--秒开-->
+    <style name="splashTheme" parent="AppTheme">
+<!--        <item name="android:windowBackground">@mipmap/splash_bg</item>-->
+        <item name="android:windowBackground">@drawable/shape_splash</item>
+        <item name="android:windowFullscreen">true</item>
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="android:windowBackground">@color/white</item>-->
+    </style>
+
+    <style name="lineStyle10">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/xj_btn_bg</item>
+        <item name="android:layout_height">@dimen/dp_10</item>
+    </style>
+
+    <style name="btnSubmitStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/xj_btn_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/submit_str</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_margin">@dimen/dp_20</item>
+    </style>
+
+    <style name="checkStyle">
+        <item name="colorControlNormal">@color/check_un_color</item>
+        <item name="colorControlActivated">@color/check_color</item>
+    </style>
+    <!-- 基础DialogActivity -->
+    <style name="Theme.BaseDialogActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowAnimationStyle">@style/popupWindowAsBottom</item>-->
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <!-- 适用于开启滑动返回功能的Activity -->
+    <style name="AppTheme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="btnThemeStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:background">@drawable/shape_theme_radius_20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/dp_35</item>
+        <item name="android:layout_marginRight">@dimen/dp_35</item>
+    </style>
+
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">#FFE1E8EB</item>
+    </style>
+
+
+
+
+</resources>

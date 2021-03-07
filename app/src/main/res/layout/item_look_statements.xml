@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical">
+
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:layout_height="42dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/orderCountTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单数"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/incomeMoneyTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收入"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/refundCountTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="退款笔数"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/refundMoneyTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="退款金额"
+            android:visibility="gone"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

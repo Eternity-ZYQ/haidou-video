@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/iv_product_logo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:contentDescription="TODO"/>
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:text="居家纯棉柔巾 干湿两用\n一次性洁面巾一次性洁面巾一次性洁面巾一次性洁面巾一次性洁面巾一次性洁面巾一次性洁面巾一次性洁面巾一次性洁面巾一次性洁面巾"
+        android:textColor="@color/c_333333"
+        android:textSize="15sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iv_product_logo"
+        app:layout_constraintTop_toTopOf="@id/iv_product_logo"/>
+
+    <TextView
+        android:id="@+id/tv_product_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:text="双11大促销 买二送一"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_marginRight="@dimen/dp_5"
+        android:maxWidth="@dimen/dp_200"
+        android:textColor="@color/c_999999"
+        android:textSize="11sp"
+        app:layout_constraintRight_toLeftOf="@+id/tv_product_sum"
+        app:layout_constraintLeft_toRightOf="@id/iv_product_logo"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_name"/>
+
+    <TextView
+        android:id="@+id/tv_product_feeMode_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        tools:text="仅支持到店消费"
+        android:layout_marginStart="@dimen/dp_15"
+        app:layout_constraintLeft_toRightOf="@id/iv_product_logo"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_desc"
+        android:textColor="@color/c_333333"/>
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_weight="1"
+        android:lines="1"
+        android:text="¥999.99"
+        android:textColor="@color/c_money"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_feeMode_type"
+        app:layout_constraintLeft_toRightOf="@id/iv_product_logo"/>
+
+    <TextView
+        android:id="@+id/tv_product_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="剩余x件"
+        android:textSize="11sp"
+        android:layout_marginRight="@dimen/dp_15"
+        app:layout_constraintTop_toTopOf="@id/tv_product_desc"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/theme_color"/>
+
+    <!--增减数量-->
+    <LinearLayout
+        android:id="@+id/layout_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_product_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:contentDescription="TODO" android:src="@mipmap/shangjia_shuliangjian"/>
+
+        <TextView
+            android:id="@+id/tv_product_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:visibility="gone"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_product_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15"
+            android:contentDescription="TODO" android:src="@mipmap/shangjia_shuliangjia"/>
+    </LinearLayout>
+
+    <!--数量-->
+    <TextView
+        android:id="@+id/tv_product_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_666666"
+        android:text="x2"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="12sp"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#E5E5E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iv_product_logo"/>
+
+</android.support.constraint.ConstraintLayout>

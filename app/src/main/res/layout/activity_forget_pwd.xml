@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/xj_background"
+    tools:context=".mine.ForgetPwdActivity">
+
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="忘记密码"
+        android:background="@color/xj_background"
+        app:titleTextColor="@color/white"
+        app:leftIcon="@mipmap/icon_left_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.yimeng.widget.NavCommonView
+        android:id="@+id/navCommonView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

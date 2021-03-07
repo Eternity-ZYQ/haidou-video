@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clickLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:background="@drawable/shape_home_product_bg">
+
+        <ImageView
+            android:id="@+id/iv_product_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_150"
+            android:src="@color/c_333333"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:text="iPhone XS 256G 来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个来一个"
+            android:textSize="14sp"
+            android:lines="2"
+            android:layout_marginLeft="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@id/iv_product_logo"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/c_333333"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:text="¥2000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+            android:textColor="@color/c_money"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_product_pay"
+            android:layout_width="wrap_content"
+            android:text="2560人付款"
+            android:textSize="11sp"
+            android:layout_marginLeft="@dimen/dp_10"
+            app:layout_constraintLeft_toRightOf="@id/tv_product_price"
+            app:layout_constraintBottom_toBottomOf="@id/tv_product_price"
+            app:layout_constraintTop_toTopOf="@id/tv_product_price"
+            android:textColor="@color/c_999999"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_product_gift"
+            android:layout_width="wrap_content"
+            android:text="送4000现金财富"
+            android:textSize="11sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_product_price"
+            android:textColor="@color/c_999999"
+            android:layout_marginBottom="@dimen/dp_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

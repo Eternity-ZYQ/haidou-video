@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/xj_background"
+    tools:context="com.yimeng.haidou.mine.FeedbackActivity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xj_background"
+        app:titleTextColor="@color/white"
+        app:leftIcon="@mipmap/icon_left_white"
+        app:title="@string/feedback_str"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您有什么问题或建议想对我们说？"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/feedbackTypeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的主题"
+                android:background="@color/xj_btn_bg"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="" android:padding="10dp"
+                android:layout_marginTop="15dp"
+                />
+            <EditText
+                android:id="@+id/feedbackContentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/xj_btn_bg"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:enabled="true"
+                android:gravity="top"
+                android:minLines="8"
+                android:inputType="" android:maxLines="10"
+                android:scrollbars="vertical"
+                android:hint="您的宝贵意见就是我们进步的源泉"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_feedback"
+                android:textColor="#999"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/btnSubmitStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

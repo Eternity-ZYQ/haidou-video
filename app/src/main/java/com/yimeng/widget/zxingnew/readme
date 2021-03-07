@@ -1,0 +1,9 @@
+1、 zxingnew 包下
+2、 drawable : selector_btn_orange.xml , qrcode_default_grid_scan_line.png , qrcode_default_scan_line.png , test_isbn
+               mipmap-xxhdpi:  qrcode_default_grid_scan_line.png , qrcode_default_scan_line.png
+3、 color    : colorOrange
+4、 styles_base.xml、 styles : <!-- zxingnew 使用 --> 包含的
+5、 AndroidManifest.xml      : <!-- zxingnew 使用 --> 包含的
+6、 build.gradle             : ------ zxingnew 使用 ------
+7、 layout   : activity_test_zxing_generate.xml , activity_test_zxing_scan.xml , activity_zxing_test_main.xml ，
+               zxing_toolbar.xml , zxing_view_control.xml

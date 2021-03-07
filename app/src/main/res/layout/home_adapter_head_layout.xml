@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/xj_background"
+	android:orientation="vertical">
+
+	<cn.bingoogolapple.bgabanner.BGABanner
+		android:id="@+id/bannerLayout"
+		android:layout_width="match_parent"
+		android:layout_height="175dp"
+		app:banner_pointContainerBackground="@android:color/transparent"
+		app:banner_aspectRatio="1.5"
+		app:banner_pointDrawable="@drawable/shape_dot" />
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/dp_10"
+		android:visibility="gone">
+
+		<com.yimeng.widget.HomeMenuTypeView
+			android:id="@+id/homeMenu_1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawablePadding="@dimen/dp_10"
+			app:HomeMenuIcon="@mipmap/ico1"
+			app:HomeMenuType="全部手机" />
+
+		<com.yimeng.widget.HomeMenuTypeView
+			android:id="@+id/homeMenu_2"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawablePadding="@dimen/dp_10"
+			app:HomeMenuIcon="@mipmap/ico2"
+			app:HomeMenuType="苹果特惠" />
+
+		<com.yimeng.widget.HomeMenuTypeView
+			android:id="@+id/homeMenu_3"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawablePadding="@dimen/dp_10"
+			app:HomeMenuIcon="@mipmap/ico3"
+			app:HomeMenuType="安卓优品" />
+
+		<com.yimeng.widget.HomeMenuTypeView
+			android:id="@+id/homeMenu_4"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawablePadding="@dimen/dp_10"
+			app:HomeMenuIcon="@mipmap/ico4"
+			app:HomeMenuType="提额专区" />
+
+	</LinearLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView_link"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/dp_5"
+		tools:layoutManager="LinearLayoutManager"
+		tools:listitem="@layout/adapter_home_link_item"
+		tools:orientation="horizontal" />
+
+<!--	<View-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="@dimen/dp_5"-->
+<!--		android:background="@color/xj_btn_bg" />-->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:visibility="gone"
+		android:layout_marginBottom="5dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="@dimen/dp_60"
+			android:layout_height="@dimen/dp_40"
+			android:layout_marginStart="@dimen/dp_10"
+			android:layout_marginEnd="@dimen/dp_10"
+			android:contentDescription="TODO" android:src="@mipmap/ico_top" />
+
+		<com.huige.library.widget.LimitScrollView
+			android:id="@+id/limitAds"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			app:limitPeriodTime="2000" />
+
+	</LinearLayout>
+
+<!--	<View-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="@dimen/dp_5"-->
+<!--		android:background="@color/xj_btn_bg" />-->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/iv_product_1"
+			android:layout_width="0dp"
+			android:layout_height="110dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginEnd="@dimen/dp_5"
+			android:layout_marginBottom="10dp"
+			android:layout_weight="1"
+			android:contentDescription="TODO" android:scaleType="fitXY"
+			android:src="@color/c_cccccc"
+			android:visibility="gone"
+			tools:visibility="visible" />
+
+
+		<ImageView
+			android:id="@+id/iv_product_2"
+			android:layout_width="0dp"
+			android:layout_height="110dp"
+			android:layout_marginStart="@dimen/dp_5"
+			android:layout_marginTop="10dp"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:contentDescription="TODO" android:scaleType="fitXY"
+			android:src="@color/c_cccccc"
+			android:visibility="gone"
+			tools:visibility="visible" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/iv_product_3"
+			android:layout_width="0dp"
+			android:layout_height="110dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="@dimen/dp_5"
+			android:layout_marginBottom="10dp"
+			android:layout_weight="1"
+			android:contentDescription="TODO" android:scaleType="fitXY"
+			android:src="@color/c_cccccc"
+			android:visibility="gone"
+			tools:visibility="visible" />
+
+
+		<ImageView
+			android:id="@+id/iv_product_4"
+			android:layout_width="0dp"
+			android:layout_height="110dp"
+			android:layout_marginStart="@dimen/dp_5"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:contentDescription="TODO" android:scaleType="fitXY"
+			android:src="@color/c_cccccc"
+			android:visibility="gone"
+			tools:visibility="visible" />
+	</LinearLayout>
+
+	<cn.bingoogolapple.bgabanner.BGABanner
+		android:id="@+id/ads_banner_layout"
+		android:layout_width="match_parent"
+		android:layout_height="115dp"
+		android:layout_margin="@dimen/dp_10"
+		android:visibility="gone"
+		app:banner_pointContainerBackground="@android:color/transparent"
+		app:banner_pointDrawable="@drawable/shape_dot"
+		tools:visibility="visible" />
+
+</LinearLayout>

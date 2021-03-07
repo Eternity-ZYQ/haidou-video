@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/activity_bg_1"
+              android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="商品分类"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout style="@style/MatchMatch">
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="54dp"
+            android:background="@color/white"
+            android:divider="@color/view_line_bg"
+            android:dividerHeight="0dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/submitBTN"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_common_height"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                style="@style/btnThemeStyle"
+                android:text="添加分类"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

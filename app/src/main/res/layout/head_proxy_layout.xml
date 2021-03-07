@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_shop_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_10"
+        android:text="我邀请的店主（0）"
+        android:textColor="@color/c_333333"
+        android:textSize="14sp"/>
+
+    <View style="@style/lineStyle"/>
+
+    <TextView
+        android:id="@+id/tv_proxy_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_10"
+        android:visibility="gone"
+        android:text="我邀请的城市服务商（0）"
+        android:textColor="@color/c_333333"
+        android:textSize="14sp"/>
+</LinearLayout>

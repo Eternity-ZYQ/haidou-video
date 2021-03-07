@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="10dp"
+	app:bl_corners_radius="20dp"
+	app:bl_solid_color="@color/c_cccccc">
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="置换彩蛋"
+		android:textColor="@color/c_333333"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<com.noober.background.view.BLEditText
+		android:id="@+id/et_input"
+		android:layout_width="0dp"
+		android:layout_height="40dp"
+		android:layout_marginTop="10dp"
+		android:hint="请输入要置换的彩蛋数量"
+		android:inputType="number"
+		android:paddingStart="10dp"
+		android:singleLine="true"
+		android:textSize="13sp"
+		app:bl_corners_radius="10dp"
+		app:bl_solid_color="@color/white"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+	<TextView
+		android:id="@+id/tv_cancel"
+		android:layout_width="0dp"
+		android:layout_height="40dp"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:text="取消"
+		android:textColor="@color/c_blue"
+		app:layout_constraintEnd_toStartOf="@+id/tv_submit"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/et_input" />
+
+	<TextView
+		android:id="@+id/tv_submit"
+		android:layout_width="0dp"
+		android:layout_height="40dp"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:text="确定"
+		android:textColor="@color/c_blue"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/tv_cancel"
+		app:layout_constraintTop_toBottomOf="@id/et_input" />
+
+
+</com.noober.background.view.BLConstraintLayout>

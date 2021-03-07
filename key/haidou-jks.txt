@@ -1,0 +1,4 @@
+storeFile file('../key/haidou.jks')
+storePassword "haidou123"
+keyAlias "haidou"
+keyPassword "haidou123"

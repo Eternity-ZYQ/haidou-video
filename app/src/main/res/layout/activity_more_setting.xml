@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_background"
+    android:orientation="vertical"
+    tools:context="com.yimeng.haidou.mine.MoreSettingActivity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xj_background"
+        app:leftIcon="@mipmap/icon_left_white"
+        app:titleTextColor="@color/white"
+        app:title="@string/more_setting_str"/>
+
+    <TextView
+        android:id="@+id/tv_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="个人资料"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_my_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="我的收货地址"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_after_sales_service"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="联系我们"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="问题反馈"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="账户与安全"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="关于我们"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <com.huige.library.widget.ItemLayout
+        android:id="@+id/item_version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        app:itemTextColor="@color/white"
+        app:itemLineVisible="GONE"
+        app:itemRightImgVisible="GONE"
+        app:itemRightText="V1.0"
+        app:itemRightTextColor="@color/white"
+        app:itemText="版本号"
+        app:itemTextSize="14sp"
+        app:itemTextPaddingLeft="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/tv_check_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/xj_btn_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="检查更新"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_margin="@dimen/dp_15"
+        style="@style/btnThemeStyle"
+        android:background="@color/xj_btn_bg"
+        android:text="@string/login_out_str"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/c_999999"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingExtra="5dp"
+        android:visibility="gone"
+        android:text="Copyright©2019-2025\n深圳枫帝科技有限公司"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.noober.background.view.BLLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bl_solid_color="@color/white"
+        app:bl_corners_radius="@dimen/dp_10"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:bl_shape="rectangle">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-35dp"
+            android:contentDescription="TODO" android:src="@mipmap/icon_sign_smile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好棒哟!"
+            android:textColor="@color/c_333333"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c_333333"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="16sp"
+            android:text="恭喜"/>
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp_20"
+            android:text="去完更多任务"
+            android:textSize="14sp"
+            android:padding="0dp"
+            app:bl_solid_color="@color/theme_color"
+            app:bl_corners_radius="@dimen/dp_20"
+            app:bl_shape="rectangle"/>
+
+    </com.noober.background.view.BLLinearLayout>
+
+
+
+</FrameLayout>

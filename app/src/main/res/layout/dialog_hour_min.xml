@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            tools:ignore="UselessParent">
+
+            <!-- 取消，确定 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_common_height"
+                tools:ignore="InefficientWeight">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="68dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/c_666666"
+                    android:textSize="14sp"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="时间选择"
+                    android:textColor="@color/c_333333"
+                    android:textSize="16sp"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_comfirm"
+                    android:layout_width="68dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/theme_color"
+                    android:textSize="14sp"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/view_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view_center"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true" />
+
+                <LinearLayout
+                    style="@style/MatchWrap"
+                    android:layout_toLeftOf="@id/view_center"
+                    android:overScrollMode="never"
+                    tools:ignore="RtlHardcoded">
+
+                    <com.yimeng.widget.wheelview.WheelView
+                        android:id="@+id/id_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MatchWrap"
+                    android:layout_toRightOf="@id/view_center"
+                    android:overScrollMode="never"
+                    tools:ignore="RtlHardcoded">
+
+                    <com.yimeng.widget.wheelview.WheelView
+                        android:id="@+id/id_min"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.yimeng.widget.wheelview.WheelView
+                        android:id="@+id/id_min1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_centerInParent="true"
+                    android:text=":"
+                    android:textColor="@color/c_999999"
+                    android:textSize="22sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/click_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sdv_image"
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="TODO" android:scaleType="centerInside" />
+
+        <View
+            android:id="@+id/clickView"
+            android:layout_width="80dp"
+            android:layout_height="76dp"/>
+
+        <TextView
+            android:id="@+id/tv_sort_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdv_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/c_333333"
+            android:textSize="12sp"
+            tools:text="贴膜" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

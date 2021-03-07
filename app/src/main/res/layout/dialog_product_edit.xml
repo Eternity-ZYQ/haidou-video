@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            style="@style/MatchWrap.Vertical"
+            android:background="@drawable/radian_bg_white">
+
+            <TextView
+                android:id="@+id/edit_price_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="修改价格"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/view_line_bg" />
+
+            <TextView
+                android:id="@+id/edit_storage_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="修改库存"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/view_line_bg" />
+
+            <TextView
+                android:id="@+id/soldout_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="下架"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/view_line_bg" />
+
+            <TextView
+                android:id="@+id/putaway_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="上架"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/view_line_bg" />
+
+            <TextView
+                android:id="@+id/edit_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="编辑"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/view_line_bg" />
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/c_333333"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/radian_bg_white"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+</RelativeLayout>

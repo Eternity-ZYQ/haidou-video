@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_finish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#8000">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_after_sales_service"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/radian_bg_white_12_12"
+        android:orientation="vertical">
+
+        <com.yimeng.widget.ClickNotSlipScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:visibility="gone">
+
+            <com.yimeng.widget.ExpandGridView
+                android:id="@+id/gv_parameter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:numColumns="1" />
+
+        </com.yimeng.widget.ClickNotSlipScrollView>
+
+        <ScrollView
+            android:layout_marginBottom="68dp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/productParamsTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c_333333"
+                    android:textSize="15sp"
+                    tools:text="6.0屏幕按附件卡洛斯积分卡十九分卡斯
+                    卡里飞机撒旦0屏幕按附件卡洛斯积分卡十九分卡斯卡里
+                    飞机撒旦0屏幕按附件卡洛斯积分卡十九分卡斯卡里飞机撒旦
+                    0屏幕按附件卡洛斯积分卡十九分卡斯卡里飞机撒旦
+                    0屏幕按附件卡洛斯积分卡十九分卡斯卡里飞机撒旦
+                    0屏幕按附件卡洛斯积分卡十九分卡斯卡里飞机撒旦
+                    0屏幕按附件卡洛斯积分卡十九分卡斯卡里飞机撒旦
+                    0屏幕按附件卡洛斯积分卡十九分卡斯卡里飞机撒旦" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/theme_color"
+        android:layout_marginRight="20dp"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/btn_determine"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

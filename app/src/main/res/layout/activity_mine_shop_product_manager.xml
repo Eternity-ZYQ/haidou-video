@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".mine.MineShopProductManagerActivity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="商品管理"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.huige.library.widget.ItemLayout
+        android:id="@+id/item_mine_goods"
+        app:itemText="管理普通商品"
+        app:itemTextPaddingLeft="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_ripple"
+        android:layout_height="wrap_content"/>
+
+    <com.huige.library.widget.ItemLayout
+        android:id="@+id/item_sale_goods"
+        app:itemText="管理自促商品"
+        android:visibility="gone"
+        app:itemTextPaddingLeft="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_ripple"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:text="温馨提示:"
+            android:textColor="@color/c_333333"/>
+
+        <TextView
+            android:id="@+id/tv_tip_desc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_12"
+            tools:text="选择平台商品可免除发货麻烦，由平台供货商送货上门！商品统一售价200元，销售一件可获得50代金券，可自用或转增！"
+            android:textColor="@color/c_333333"/>
+
+    </LinearLayout>
+</LinearLayout>

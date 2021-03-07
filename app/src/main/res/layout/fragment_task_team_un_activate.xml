@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_unactivate_bg">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@color/black"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        app:srlEnableLoadMore="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.huige.library.widget.LimitScrollView
+                android:id="@+id/limitAds"
+                app:limitPeriodTime="2000"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp_30"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="36dp"
+                android:contentDescription="TODO" android:src="@mipmap/icon_seed"/>
+
+            <TextView
+                android:id="@+id/tv_seed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="激活需要消耗种子x颗"/>
+
+            <com.noober.background.view.BLButton
+                android:id="@+id/btn_key"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="立即激活"
+                app:bl_corners_radius="@dimen/dp_5"
+                app:bl_enabled_solid_color="@color/theme_color"
+                app:bl_enabled_textColor="@color/white"
+                app:bl_unEnabled_solid_color="@color/c_cccccc"
+                app:bl_unSelected_textColor="@color/c_333333"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="如何获得发财种子?"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

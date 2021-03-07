@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="db_cxzw"/>
+
+    <!--更新时间 2019年08月16日14:52:11-->
+    <version value="4"/>
+
+    <list>
+        <mapping class="com.yimeng.entity.HistoryAccountBean"/>
+        <mapping class="com.yimeng.entity.DownloadLogs"/>
+        <!--创建店铺输入缓存-->
+        <mapping class="com.yimeng.entity.ShopDetailCache"/>
+        <!--种子数据-->
+        <mapping class="com.yimeng.entity.SeedBean"/>
+    </list>
+
+    <!-- 直接设置这个，就表示数据库存储的位置，直接打开手机存储就可以找到 -->
+    <!--<storage value="cxzw/database"/>-->
+
+</litepal>

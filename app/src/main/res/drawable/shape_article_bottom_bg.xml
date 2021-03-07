@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ *************************************************
+  ~ 文件：shape_article_bottom_bg.xml
+  ~ Author：huiGer
+  ~ 当前修改时间：2019年04月27日 14:30:34
+  ~ 上次修改时间：2019年04月27日 14:30:33
+  ~
+  ~ Copyright (c) 2019.
+  ~ *************************************************
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/xj_btn_bg"/>
+    <corners android:bottomLeftRadius="@dimen/dp_15"
+             android:bottomRightRadius="@dimen/dp_15"/>
+</shape>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/xj_background"
+	tools:context=".mine.MyFansActivity">
+
+	<com.yimeng.widget.MyToolBar
+		android:id="@+id/toolBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:title="我的粉丝"
+		app:titleTextColor="@color/white"
+		app:leftIcon="@mipmap/icon_left_white"
+		app:lineVisible="gone"
+		android:background="@color/xj_background"/>
+
+	<com.scwang.smartrefresh.layout.SmartRefreshLayout
+		android:id="@+id/smartRefresh"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			tools:listitem="@layout/adapter_fans_item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+
+	</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_20"
+    android:background="@drawable/shape_white_radius_10"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_yue_pay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="TODO" android:padding="@dimen/dp_10"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:src="@mipmap/ico17_account1"/>
+
+    <ImageView
+        android:id="@+id/iv_wechat_pay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="TODO" android:padding="@dimen/dp_10"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginStart="@dimen/dp_10"
+        android:src="@mipmap/icon_wechat_circle"/>
+
+    <ImageView
+        android:id="@+id/iv_alipay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="TODO" android:padding="@dimen/dp_10"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginStart="@dimen/dp_10"
+        android:src="@mipmap/icon_alipay_circle"/>
+
+</LinearLayout>

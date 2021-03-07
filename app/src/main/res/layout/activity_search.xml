@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/xj_background"
+              android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="搜索"
+        android:background="@color/xj_background"
+        app:leftIcon="@mipmap/icon_left_white"
+        app:titleTextColor="@color/white"
+        app:lineVisible="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 搜索框 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_search_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="#C7A53B"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_search_submit"
+            android:background="@color/xj_btn_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="16dp" android:contentDescription="TODO" 
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/search_gray" />
+
+            <EditText
+                android:id="@+id/searchET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:background="@null"
+                android:hint="@string/seach_good"
+                android:textColor="@color/white"
+                android:textColorHint="#CDCDCD"
+                android:textSize="13sp"
+                tools:ignore="RtlHardcoded,TextFields" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/sdv_search_history"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@mipmap/icon_search_history"
+            android:contentDescription="TODO" tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/sdv_search_history"
+            android:text="@string/tv_search_history"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_del_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="TODO" android:padding="@dimen/dp_5"
+            android:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@mipmap/shangjia_qingkong"/>
+
+    </RelativeLayout>
+
+    <com.yimeng.widget.FlowLayout
+        android:id="@+id/flayout_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:paddingBottom="23dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="23dp">
+
+        <com.yimeng.widget.ExpandGridView
+            android:id="@+id/gv_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit" />
+
+    </com.yimeng.widget.FlowLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/sdv_hot_recommended"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@mipmap/icon_hot_recommended"
+            android:contentDescription="TODO" tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/sdv_hot_recommended"
+            android:text="@string/tv_hot_recommended"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </RelativeLayout>
+
+    <com.yimeng.widget.FlowLayout
+        android:id="@+id/flayout_hot_recommended"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:paddingBottom="23dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="23dp">
+
+        <com.yimeng.widget.ExpandGridView
+            android:id="@+id/gv_hot_recommended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit" />
+
+    </com.yimeng.widget.FlowLayout>
+
+</LinearLayout>

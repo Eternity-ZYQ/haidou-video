@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/titleTV"
+            style="@style/WrapWrap"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp"
+            tools:text="微信充值100.00元" />
+
+        <TextView
+            android:id="@+id/moneyTV"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_textcolor_red"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="+100" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/dateTV"
+            style="@style/WrapWrap"
+            android:textColor="@color/c_999999"
+            android:textSize="12sp"
+            tools:text="2018-06-08 11:45:51" />
+
+        <TextView
+            android:id="@+id/totalTV"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/c_666666"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="600" />
+
+    </RelativeLayout>
+
+</LinearLayout>

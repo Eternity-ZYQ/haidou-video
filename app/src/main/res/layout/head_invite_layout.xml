@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/layer_list_invite"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="邀请我的伙伴"
+            android:textColor="@color/theme_color"
+            android:textSize="14sp"/>
+
+        <include
+            android:id="@+id/layout_big_baby"
+            android:visibility="gone"
+            layout="@layout/adapter_my_invite_item"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_10">
+        <TextView
+            android:id="@+id/tv_small_baby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/layer_list_invite"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="我邀请的伙伴"
+            android:textColor="@color/theme_color"
+            android:textSize="14sp"/>
+    </FrameLayout>
+
+</LinearLayout>

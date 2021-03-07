@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AMapSearchActivity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightContent="保存"
+        app:title="地图"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/map_maker"
+            android:visibility="gone"
+            tools:ignore="ContentDescription"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_et_line"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/map_search_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toLeftOf="@+id/map_search_tv"
+                android:layout_toStartOf="@+id/map_search_tv"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入地址"
+                android:inputType="" android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/map_search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#F0F0F0"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingStart="20dp"
+                android:text="搜索"
+                android:textColor="@color/color_111111"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

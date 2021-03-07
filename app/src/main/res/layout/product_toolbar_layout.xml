@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45">
+
+        <ImageView
+            android:id="@+id/toolBar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:contentDescription="TODO" android:padding="@dimen/dp_10"
+            android:src="@mipmap/back_wihte"/>
+
+        <TextView
+            android:id="@+id/toolBar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            android:textSize="18sp"
+            tools:text="标题"/>
+
+        <ImageView
+            android:id="@+id/iv_right_2"
+            android:layout_width="wrap_content" android:contentDescription="TODO" 
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/right_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"/>
+
+        <LinearLayout
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_width="wrap_content" android:contentDescription="TODO" 
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="右边"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line"
+            style="@style/lineStyle"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

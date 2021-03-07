@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.yimeng.widget.SamplePagerCoverVideo
+            android:id="@+id/videoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.noober.background.view.BLFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:bl_corners_radius="20dp"
+            app:bl_solid_color="@color/xj_btn_bg">
+
+            <TextView
+                android:id="@+id/tv_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="我来说两句"
+                android:imeOptions="actionSend"
+                android:paddingStart="20dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/c_999999"
+                android:textSize="12sp" />
+
+        </com.noober.background.view.BLFrameLayout>
+
+    </LinearLayout>
+
+    <com.huige.library.widget.CircleImageView
+        android:id="@+id/civ_user_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/xj_logo"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_like_num"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/tv_like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:button="@null"
+        android:drawableTop="@mipmap/icon_video_unlike"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_comment_num"
+        app:layout_constraintEnd_toEndOf="@id/civ_user_head"
+        app:layout_constraintStart_toStartOf="@id/civ_user_head"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/tv_comment_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:drawableTop="@mipmap/icon_video_comment"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_share_num"
+        app:layout_constraintEnd_toEndOf="@id/civ_user_head"
+        app:layout_constraintStart_toStartOf="@id/civ_user_head"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/tv_share_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:drawableTop="@mipmap/icon_video_share"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/civ_user_head"
+        app:layout_constraintStart_toStartOf="@id/civ_user_head"
+        tools:text="123" />
+
+</android.support.constraint.ConstraintLayout>

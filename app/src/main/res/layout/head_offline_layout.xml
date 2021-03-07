@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/bannerLayout"
+        android:layout_width="match_parent"
+        app:banner_pointDrawable="@drawable/shape_dot"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        android:layout_height="@dimen/dp_150"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_gift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableTop="@mipmap/ico1"
+            android:gravity="center"
+            android:text="畅销手机"
+            android:textColor="@color/c_666666"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableTop="@mipmap/ico2"
+            android:gravity="center"
+            android:text="苹果特惠"
+            android:textColor="@color/c_666666"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_parent_child_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableTop="@mipmap/ico3"
+            android:gravity="center"
+            android:text="安卓优品"
+            android:textColor="@color/c_666666"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_parent_child_knowledge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableTop="@mipmap/ico4"
+            android:gravity="center"
+            android:text="分期专区"
+            android:textColor="@color/c_666666"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <View style="@style/lineStyle10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/c_333333"
+        android:textSize="17sp"
+        android:drawableLeft="@mipmap/homepage_blue_left"
+        android:drawableRight="@mipmap/homepage_blue_right"
+        android:drawablePadding="15dp"
+        android:text="附近商家"/>
+
+
+</LinearLayout>

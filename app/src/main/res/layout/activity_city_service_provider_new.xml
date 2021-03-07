@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="我的收益"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/MatchWrap.Vertical"
+                android:paddingBottom="@dimen/dp_15"
+                android:background="@color/theme_color">
+
+                <TextView
+                    android:id="@+id/moneyTV"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="¥0.00" />
+
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="收益账户余额（元）"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/view_center"
+                    android:layout_width="1dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:background="#D2C59A" />
+
+                <LinearLayout
+                    style="@style/MatchWrap.Vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/view_center"
+                    android:gravity="center_horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:id="@+id/canWithdrawMoneyTV"
+                        style="@style/WrapWrap"
+                        android:textColor="#82670F"
+                        android:textSize="18sp"
+                        android:text="¥0.00" />
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="8dp"
+                        android:text="可提现金额"
+                        android:textColor="@color/c_999999"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MatchWrap.Vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/view_center"
+                    android:gravity="center_horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:id="@+id/unSettlementTv"
+                        style="@style/WrapWrap"
+                        android:textColor="#82670F"
+                        android:textSize="18sp"
+                        android:text="¥0.00" />
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="8dp"
+                        android:text="未结算收益"
+                        android:textColor="@color/c_999999"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clickOneRL"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:text="收益提现"
+                    android:textColor="@color/c_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/myRegionalMoneyTV"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/c_333333"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded"
+                    tools:text="9000" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/myRegionalMoneyLastMonthTV"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/c_333333"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded"
+                    tools:text="上月: 9000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right_arrow"
+                    android:contentDescription="TODO" tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <View style="@style/lineStyle"
+                android:layout_marginLeft="12dp"
+                tools:ignore="RtlHardcoded" />
+
+            <RelativeLayout
+                android:id="@+id/clickTwoRL"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:text="收益列表"
+                    android:textColor="@color/c_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/recommendRegionalMoneyTV"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/c_333333"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded"
+                    tools:text="9000" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/recommendRegionalMoneyLastMonthTV"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/c_333333"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded"
+                    tools:text="上月: 9000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right_arrow"
+                    android:contentDescription="TODO" tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <View style="@style/lineStyle"
+                android:layout_marginLeft="12dp"
+                tools:ignore="RtlHardcoded" />/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xj_btn_bg"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:contentDescription="TODO" android:src="@color/c_cccccc"
+        tools:ignore="RtlHardcoded"
+        android:layout_margin="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="@dimen/dp_200"
+        android:text="婴微爱月子会所婴微爱月子会所婴微爱月子会所婴微爱月子会所婴微爱月子会所"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/iv_logo"
+        app:layout_constraintTop_toTopOf="@id/iv_logo"/>
+
+    <TextView
+        android:id="@+id/tv_shop_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="@dimen/dp_200"
+        android:text="地址:深圳市龙华..."
+        android:textColor="@color/c_666666"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+        app:layout_constraintLeft_toRightOf="@id/iv_logo"/>
+
+    <TextView
+        android:id="@+id/tv_shop_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="5.12km"
+        android:textColor="@color/c_666666"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_logo"/>
+
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:text="5.0"
+        android:textColor="#ffb000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_shop_address"
+        app:layout_constraintLeft_toRightOf="@id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@id/tv_shop_name"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:background="#DADADA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iv_logo"/>
+
+</android.support.constraint.ConstraintLayout>

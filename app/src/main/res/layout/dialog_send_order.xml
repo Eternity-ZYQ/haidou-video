@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:contentDescription="TODO" android:src="@mipmap/icon_close_gray"
+        app:layout_constraintBottom_toTopOf="@id/ll_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.noober.background.view.BLLinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        app:bl_corners_radius="@dimen/dp_5"
+        app:bl_shape="rectangle"
+        app:bl_solid_color="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_close">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dp_20"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/c_333333"
+            android:text="团员销售任务管理"/>
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_send_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            app:bl_corners_radius="@dimen/dp_20"
+            app:bl_shape="rectangle"
+            android:text="去派单"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            app:bl_solid_color="#d3a056"/>
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_post_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_margin="@dimen/dp_20"
+            app:bl_corners_radius="@dimen/dp_20"
+            app:bl_gradient_endColor="#feab34"
+            app:bl_gradient_startColor="#fcd855"
+            android:text="去配单"
+            android:padding="0dp"
+            app:bl_shape="rectangle"/>
+
+    </com.noober.background.view.BLLinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

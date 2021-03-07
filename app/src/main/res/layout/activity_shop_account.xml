@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/activity_bg_1"
+              android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="店铺账户"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/theme_color"
+        tools:ignore="UselessParent">
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/rl_common_height"
+            android:layout_centerInParent="true"
+            android:background="#DBB437" />
+
+        <LinearLayout
+            android:id="@+id/moneyLL"
+            style="@style/MatchWrap.Vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/centerView"
+            android:gravity="center"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout style="@style/WrapWrap.Horizontal">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="¥"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/moneyTV"
+                    style="@style/WrapWrap"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    tools:text="1000" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/moneyHintTV"
+                style="@style/WrapWrap"
+                android:layout_marginTop="6dp"
+                android:text="余额"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notRecordedLL"
+            style="@style/MatchWrap.Vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/centerView"
+            android:gravity="center"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout style="@style/WrapWrap.Horizontal">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="¥"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/notRecordedTV"
+                    style="@style/WrapWrap"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    tools:text="500" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginTop="6dp"
+                android:text="未入账"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clickRL"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/withdraw_shop_tv"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:text="提现"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/right_arrow"
+            android:contentDescription="TODO" tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="12sp"
+            android:textColor="#ABABAB"
+            android:text="提现时间：24h可提现；每天一次"/>
+    </LinearLayout>
+
+</LinearLayout>

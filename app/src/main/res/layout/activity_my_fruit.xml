@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    tools:context=".task_3_0.MySeedActivity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightContent="查看记录"
+        app:title="我的活跃果"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:contentDescription="TODO" android:src="@mipmap/icon_fruit"/>
+
+    <TextView
+        android:id="@+id/tv_fruit_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="我的活跃果\n0颗"
+        android:textColor="@color/c_333333"
+        android:textSize="15sp"/>
+
+    <com.noober.background.view.BLButton
+        android:id="@+id/btn_pay"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_50"
+        android:padding="0dp"
+        android:text="抢购"
+        android:textColor="@color/white"
+        app:bl_corners_radius="@dimen/dp_5"
+        app:bl_solid_color="@color/theme_color"/>
+
+
+    <com.noober.background.view.BLButton
+        android:id="@+id/btn_sell"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_15"
+        android:padding="0dp"
+        android:text="挂卖"
+        android:textColor="@color/white"
+        app:bl_corners_radius="@dimen/dp_5"
+        app:bl_solid_color="@color/theme_color"/>
+
+    <com.noober.background.view.BLButton
+        android:id="@+id/btn_my_sell"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_15"
+        android:padding="0dp"
+        android:text="我的挂卖"
+        android:textColor="@color/white"
+        app:bl_corners_radius="@dimen/dp_5"
+        app:bl_solid_color="@color/theme_color"/>
+
+</LinearLayout>

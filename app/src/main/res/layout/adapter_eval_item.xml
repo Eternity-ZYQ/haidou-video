@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="15dp">
+
+	<com.huige.library.widget.CircleImageView
+		android:id="@+id/civ_user_head"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:src="@color/c_cccccc"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/tv_user_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:text="用户账号"
+		android:textColor="@color/c_999999"
+		app:layout_constraintBottom_toBottomOf="@id/civ_user_head"
+		app:layout_constraintStart_toEndOf="@id/civ_user_head"
+		app:layout_constraintTop_toTopOf="@id/civ_user_head" />
+
+	<TextView
+		android:id="@+id/tv_eval"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:text="评论内容"
+		android:textColor="@color/white"
+		app:layout_constraintStart_toStartOf="@id/tv_user_name"
+		app:layout_constraintTop_toBottomOf="@id/tv_user_name" />
+
+	<TextView
+		android:id="@+id/tv_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:textColor="@color/c_999999"
+		android:text="时间"
+		app:layout_constraintStart_toStartOf="@id/tv_user_name"
+		app:layout_constraintTop_toBottomOf="@id/tv_eval" />
+
+</android.support.constraint.ConstraintLayout>

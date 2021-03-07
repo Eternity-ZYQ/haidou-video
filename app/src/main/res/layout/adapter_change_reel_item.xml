@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginStart="10dp"
+	android:layout_marginTop="10dp"
+	android:layout_marginEnd="10dp"
+	android:padding="10dp"
+	app:bl_corners_radius="10dp"
+	app:bl_solid_color="@color/xj_btn_bg">
+
+	<TextView
+		android:id="@+id/tv_reel_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="金蛋名"
+		android:textColor="@color/theme_color"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/tv_reel_task"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="任务名"
+		android:textColor="@color/theme_color"
+		app:layout_constraintStart_toStartOf="@id/tv_reel_name"
+		app:layout_constraintTop_toBottomOf="@id/tv_reel_name" />
+
+	<TextView
+		android:id="@+id/tv_reel_consume"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="消耗"
+		android:textColor="@color/theme_color"
+		app:layout_constraintStart_toStartOf="@id/tv_reel_name"
+		app:layout_constraintTop_toBottomOf="@id/tv_reel_task" />
+
+	<TextView
+		android:id="@+id/tv_reel_yield"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="总产量"
+		android:textColor="@color/theme_color"
+		app:layout_constraintStart_toStartOf="@id/tv_reel_name"
+		app:layout_constraintTop_toBottomOf="@id/tv_reel_consume" />
+
+	<com.noober.background.view.BLButton
+		android:id="@+id/btn_change"
+		android:layout_width="wrap_content"
+		android:layout_height="35dp"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:bl_corners_radius="20dp"
+		app:bl_solid_color="@color/theme_color"
+		android:textColor="@color/white"
+		android:padding="0dp"
+		android:text="兑换"/>
+
+	<TextView
+		android:id="@+id/tv_reel_validity"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="有效期"
+		app:layout_constraintTop_toTopOf="@id/btn_change"
+		app:layout_constraintBottom_toBottomOf="@id/btn_change"
+		app:layout_constraintEnd_toStartOf="@id/btn_change"
+		android:layout_marginEnd="10dp"
+		android:textColor="@color/theme_color" />
+
+
+</com.noober.background.view.BLConstraintLayout>

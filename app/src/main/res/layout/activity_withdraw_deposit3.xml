@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix"
+    tools:context=".mine.WithdrawDeposit3Activity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lineVisible="gone"
+        app:rightContent="查看记录"/>
+
+
+    <ImageView
+        android:id="@+id/iv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:contentDescription="TODO" android:src="@mipmap/icon_user_balance"/>
+
+    <TextView
+        android:id="@+id/tv_wallet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:textSize="14sp"
+        android:textColor="@color/c_333333"
+        android:textStyle="bold"
+        tools:text="我的零钱"/>
+
+    <TextView
+        android:id="@+id/tv_wallet_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/c_333333"
+        android:text="¥0.00"/>
+
+    <TextView
+        android:id="@+id/tv_wallet_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="12sp"
+        android:textColor="@color/theme_color"
+        tools:text="提示提示提示提示提示提示提示提示"/>
+
+
+    <com.noober.background.view.BLButton
+        android:id="@+id/btn_recharge"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_35"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_100"
+        app:bl_corners_radius="5dp"
+        app:bl_shape="rectangle"
+        android:textSize="12sp"
+        app:bl_solid_color="@color/theme_color"
+        android:text="充值"/>
+
+    <com.noober.background.view.BLButton
+        android:id="@+id/btn_withdraw"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_35"
+        android:textColor="@color/theme_color"
+        android:layout_marginTop="@dimen/dp_15"
+        app:bl_corners_radius="5dp"
+        app:bl_shape="rectangle"
+        android:textSize="12sp"
+        app:bl_solid_color="#edeced"
+        android:text="提现"/>
+
+</LinearLayout>

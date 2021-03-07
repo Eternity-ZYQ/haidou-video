@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xj_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="left|center"
+        android:textColor="@color/c_999999"
+        android:textSize="14sp"
+        tools:ignore="RtlHardcoded"
+        tools:text="坪洲手机麻麻直营店" />
+
+    <View style="@style/lineStyle"/>
+
+    <com.yimeng.widget.ExpandListView
+        android:id="@+id/lv_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/lineStyle10"/>
+
+    <!-- 物流配送 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="42dp"
+        android:paddingLeft="12dp"
+        android:visibility="gone"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="物流配送"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/freightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/c_666666"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="运费0元" />
+
+    </RelativeLayout>
+
+    <!-- 买家留言 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="42dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="买家留言"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/buyerMessageET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:background="@drawable/radian_bg_wihte_stroke_gray_t3"
+            android:hint="（选填）您对本次交易的说明"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/c_999999"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded,TextFields" />
+
+    </RelativeLayout>
+
+    <View style="@style/lineStyle10"/>
+
+</LinearLayout>

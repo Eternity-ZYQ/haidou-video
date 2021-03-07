@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/xj_background"
+              android:orientation="vertical">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="搜索"
+        android:background="@color/xj_background"
+        app:titleTextColor="@color/white"
+        app:lineVisible="gone"
+        app:leftIcon="@mipmap/icon_left_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#C7A53B"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_search_cancel"
+            android:background="@color/xj_btn_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="16dp" android:contentDescription="TODO" 
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/search_gray" />
+
+            <EditText
+                android:id="@+id/searchET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:background="@null"
+                android:hint="@string/seach_good"
+                android:textColor="@color/white"
+                android:textColorHint="#CDCDCD"
+                android:textSize="13sp"
+                tools:ignore="RtlHardcoded,TextFields" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_search_result_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/c_999999"
+        android:textSize="16sp"
+        tools:text="历史结果：约22条" />
+
+
+    <ListView
+        android:id="@+id/lv_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xj_background"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_search_not_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/c_999999"
+        android:textSize="16sp"
+        android:text="@string/tv_search_not_data"
+        android:gravity="center"
+        android:visibility="visible" />
+
+</LinearLayout>

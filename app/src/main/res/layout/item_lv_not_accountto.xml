@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            style="@style/WrapWrap.Vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/titleTV"
+                style="@style/WrapWrap"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"
+                tools:text="微信充值100.00元" />
+
+            <TextView
+                android:id="@+id/dateTV"
+                style="@style/WrapWrap"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/c_999999"
+                android:textSize="12sp"
+                tools:text="2018-06-08 11:45:51" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moneyTV"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_textcolor_red"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            tools:ignore="RtlHardcoded"
+            tools:text="+100" />
+
+    </RelativeLayout>
+
+</LinearLayout>

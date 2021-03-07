@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order.OrderActivity">
+
+    <com.yimeng.widget.MyToolBar
+        android:id="@+id/toolBar"
+        app:title="我的订单"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.huige.library.widget.ItemLayout
+        android:id="@+id/item_mall_order"
+        app:itemText="平台商城订单"
+        app:itemTextPaddingLeft="@dimen/dp_20"
+        android:background="@drawable/white_ripple"
+        android:layout_width="match_parent"
+        app:itemLineVisible="GONE"
+        android:layout_height="wrap_content"/>
+
+    <com.huige.library.widget.ItemLayout
+        android:id="@+id/item_shop_order"
+        app:itemText="附近店铺订单"
+        app:itemTextPaddingLeft="@dimen/dp_20"
+        android:background="@drawable/white_ripple"
+        android:layout_width="match_parent"
+        app:itemLineVisible="GONE"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

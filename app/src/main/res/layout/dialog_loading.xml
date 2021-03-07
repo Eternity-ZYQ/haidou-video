@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout
+    android:id="@+id/ll_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dp_80"
+    android:minHeight="@dimen/dp_80"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.lxj.xpopup.widget.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="30dp"
+        android:visibility="gone"
+        android:layout_height="30dp"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_loading"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--android:src="@mipmap/loading_back"/>-->
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:visibility="gone"
+        android:text="loading"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="@color/c_333333"/>
+
+</com.noober.background.view.BLLinearLayout>

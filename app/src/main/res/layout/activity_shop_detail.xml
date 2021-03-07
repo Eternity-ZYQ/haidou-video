@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xj_background"
+    android:orientation="vertical"
+    tools:context=".nearby.ShopDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xj_background"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_shop_logo_bg"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="-380dp"
+                android:contentDescription="TODO" android:scaleType="centerCrop"
+                tools:src="@color/c_cccccc"/>
+            <!--android:layout_height="@dimen/dp_120"-->
+
+            <ImageView
+                android:id="@+id/iv_shop_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-40dp"
+                android:contentDescription="TODO" android:scaleType="fitXY"
+                tools:src="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="店铺名称"/>
+
+            <TextView
+                android:id="@+id/tv_shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/shape_14ff2f9a"
+                android:drawableLeft="@mipmap/address"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:textColor="@color/theme_color"
+                android:textSize="12sp"
+                tools:text="深圳市龙华区"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:text="营业时间：10:00-20:00"
+                android:textColor="@color/c_999999"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_linkman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:text="联系方式："
+                android:textColor="@color/c_999999"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_shop_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_5"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:textColor="@color/c_666666"
+                android:textSize="12sp"
+                tools:text="公告：12周年店庆，新老顾客回馈大酬宾，"/>
+
+
+        </LinearLayout>
+
+        <com.yimeng.widget.ProductToolBar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/status_bar_height"
+            app:layout_collapseMode="pin"
+            app:p_leftIcon="@mipmap/ico_back_black"
+            app:p_lineVisible="gone"
+            app:p_rightIcon="@mipmap/ico_share_balck"
+            app:p_rightIcon2="@mipmap/ico_collect_black"
+            app:p_titleTextColor="@color/c_333333"
+            app:p_toolbarBgColor="@android:color/transparent"/>
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_10"
+        app:tabIndicatorColor="@color/theme_color"
+        app:tabSelectedTextColor="@color/theme_color"
+        app:tabTextColor="@color/white"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

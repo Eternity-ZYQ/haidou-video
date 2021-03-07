@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="任务名称"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_task_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:contentDescription="TODO" android:src="@mipmap/right_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_task_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_activate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="激活任务"
+            android:textColor="@color/white"
+            app:bl_corners_radius="@dimen/dp_5"
+            app:bl_solid_color="@color/theme_color"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:visibility="gone"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_buy_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="任意购买"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar_buy"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:progressDrawable="@drawable/layer_progress_bg"/>
+
+            <TextView
+                android:id="@+id/tv_buy_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_333333"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:text="0/0"/>
+
+            <com.noober.background.view.BLButton
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:text="去完成"
+                android:padding="0dp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="@dimen/dp_20"
+                app:bl_solid_color="@color/theme_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:visibility="gone"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_sell_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="销售"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar_sell"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:progressDrawable="@drawable/layer_progress_bg"/>
+
+            <TextView
+                android:id="@+id/tv_sell_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_333333"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:text="0/0"/>
+
+            <com.noober.background.view.BLButton
+                android:id="@+id/btn_sell"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:text="去完成"
+                android:padding="0dp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="@dimen/dp_20"
+                app:bl_solid_color="@color/theme_color"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/lineStyle"/>
+
+</LinearLayout>

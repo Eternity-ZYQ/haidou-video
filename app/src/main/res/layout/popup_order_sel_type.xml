@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_mall_order"
+        android:layout_width="match_parent"
+        android:text="商城订单"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/c_333333"
+        android:textSize="12sp"
+        android:background="@drawable/white_ripple"
+        android:layout_height="wrap_content"/>
+
+    <View style="@style/lineStyle"/>
+
+    <TextView
+        android:id="@+id/tv_shop_order"
+        android:layout_width="wrap_content"
+        android:text="附近商家订单"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/c_333333"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/white_ripple"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

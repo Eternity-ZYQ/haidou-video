@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            style="@style/WrapWrap.Vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="84dp"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/titleTV"
+                style="@style/WrapWrap"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"
+                tools:text="标题" />
+
+            <TextView
+                android:id="@+id/describeTV"
+                style="@style/WrapWrap"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/c_999999"
+                android:textSize="12sp"
+                tools:text="描述" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otherTV"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="+3" />
+
+    </RelativeLayout>
+
+</LinearLayout>

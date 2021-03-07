@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="adapter_item_tag_key" type="id"/>
+
+<!--    <item name="tab_video" type="id"/>-->
+<!--    <item name="tab_home" type="id"/>-->
+<!--    <item name="tab_shop" type="id"/>-->
+<!--    <item name="tab_goodsClassify" type="id"/>-->
+<!--    <item name="tab_record" type="id"/>-->
+<!--    <item name="tab_shopCard" type="id"/>-->
+<!--    <item name="tab_mine" type="id"/>-->
+<!--    <item name="tab_game" type="id"/>-->
+<!--    <item name="tab_add" type="id"/>-->
+
+    <item name="click_filter_key" type="id"/>
+    <item name="seed_isUp_key" type="id"/>
+    <item name="seed_original_y_key" type="id"/>
+    <item name="seed_speed_key" type="id"/>
+
+</resources>

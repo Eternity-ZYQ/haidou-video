@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/xj_background">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<com.noober.background.view.BLImageView
+			android:id="@+id/iv_banner"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:layout_margin="10dp"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			app:bl_corners_radius="10dp"
+			app:bl_solid_color="@color/c_cccccc" />
+
+		<android.support.constraint.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<com.noober.background.view.BLCheckBox
+				android:id="@+id/cb_zh"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:button="@null"
+				android:checked="true"
+				android:gravity="center"
+				android:text="综合"
+				app:bl_checked_textColor="@color/theme_color"
+				app:bl_unChecked_textColor="@color/white"
+				app:layout_constraintEnd_toStartOf="@+id/cb_xl"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<com.noober.background.view.BLCheckBox
+				android:id="@+id/cb_xl"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:button="@null"
+				android:gravity="center"
+				android:text="销量"
+				app:bl_checked_textColor="@color/theme_color"
+				app:bl_unChecked_textColor="@color/white"
+				app:layout_constraintEnd_toStartOf="@id/cb_zx"
+				app:layout_constraintStart_toEndOf="@id/cb_zh"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<com.noober.background.view.BLCheckBox
+				android:id="@+id/cb_zx"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:button="@null"
+				android:gravity="center"
+				android:text="最新"
+				app:bl_checked_textColor="@color/theme_color"
+				app:bl_unChecked_textColor="@color/white"
+				app:layout_constraintEnd_toStartOf="@id/tv_price"
+				app:layout_constraintStart_toEndOf="@id/cb_xl"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/tv_price"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:gravity="center"
+				android:text="价格"
+				android:textColor="@color/white"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@id/cb_zx"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<View
+				android:id="@+id/v_zh"
+				android:layout_width="30dp"
+				android:layout_height="3dp"
+				android:background="@color/theme_color"
+				app:layout_constraintEnd_toEndOf="@id/cb_zh"
+				app:layout_constraintStart_toStartOf="@id/cb_zh"
+				app:layout_constraintTop_toBottomOf="@id/cb_zh" />
+
+			<View
+				android:id="@+id/v_xl"
+				android:layout_width="30dp"
+				android:layout_height="3dp"
+				android:background="@color/theme_color"
+				android:visibility="invisible"
+				app:layout_constraintEnd_toEndOf="@id/cb_xl"
+				app:layout_constraintStart_toStartOf="@id/cb_xl"
+				app:layout_constraintTop_toBottomOf="@id/cb_xl" />
+
+			<View
+				android:id="@+id/v_zx"
+				android:layout_width="30dp"
+				android:layout_height="3dp"
+				android:background="@color/theme_color"
+				android:visibility="invisible"
+				app:layout_constraintEnd_toEndOf="@id/cb_zx"
+				app:layout_constraintStart_toStartOf="@id/cb_zx"
+				app:layout_constraintTop_toBottomOf="@id/cb_zx" />
+
+		</android.support.constraint.ConstraintLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginStart="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginEnd="5dp"
+			app:layoutManager="android.support.v7.widget.GridLayoutManager"
+			app:spanCount="2"
+			tools:itemCount="6"
+			tools:listitem="@layout/adapter_mall_product_item" />
+
+	</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

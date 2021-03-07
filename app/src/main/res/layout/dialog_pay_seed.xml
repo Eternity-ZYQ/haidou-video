@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:bl_corners_radius="@dimen/dp_10"
+    app:bl_shape="rectangle"
+    app:bl_solid_color="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:textColor="@color/c_333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="标题"/>
+
+
+    <TextView
+        android:id="@+id/tv_seed_price_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_money"
+        android:textSize="20sp"
+        tools:text="￥0.00"/>
+
+    <!--余额支付-->
+    <LinearLayout
+        android:id="@+id/ll_yue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="22dp"
+            android:contentDescription="TODO" android:src="@mipmap/zhifu_yue"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额支付"
+                android:textColor="@color/c_333333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额"
+                android:textColor="@color/c_333333"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_yue"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/select_check_bg"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <!--微信支付-->
+    <LinearLayout
+        android:id="@+id/ll_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" android:src="@mipmap/wechat_icon"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_weight="1"
+            android:text="微信支付"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_wechat"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/select_check_bg"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <!--支付宝支付-->
+    <LinearLayout
+        android:id="@+id/ll_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" android:src="@mipmap/alipay_icon"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_weight="1"
+            android:text="支付宝支付"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_alipay"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/select_check_bg"
+            android:button="@null"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginTop="@dimen/dp_15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal">
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="再等等"
+            android:textColor="@color/theme_color"
+            app:bl_corners_bottomLeftRadius="@dimen/dp_10"
+            app:bl_pressed_solid_color="@color/ripple"
+            app:bl_unPressed_solid_color="@color/white"/>
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/c_cccccc"/>
+
+        <com.noober.background.view.BLButton
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="确认"
+            android:textColor="@color/theme_color"
+            app:bl_corners_bottomRightRadius="@dimen/dp_10"
+            app:bl_pressed_solid_color="@color/ripple"
+            app:bl_unPressed_solid_color="@color/white"/>
+
+    </LinearLayout>
+
+
+</com.noober.background.view.BLLinearLayout>

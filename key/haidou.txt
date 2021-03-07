@@ -1,0 +1,62 @@
+1.改包名
+ 由com.yimeng.xuanjian 改为com.yimeng.haidou
+ applicationId 'com.yimeng.haidou'
+2.host (gradle) 
+  http://hdapp.caihvideo.com/ (暂定测试)
+  http://hdapp.caihvideo.com/ (上线)
+3.版本号
+	compileSdkVersion: 27,
+	buildToolsVersion: "27.1.1",
+	minSdkVersion    : 21,
+	targetSdkVersion : 27,
+	versionCode      : 5,
+	versionName      : "1.0.2"
+4.签名
+	storeFile file('../key/hd.jks')
+	storePassword "hd23"
+	keyAlias "hd"
+	keyPassword "hd123" 
+5.app_name
+	炫见 改为 海抖 (炫见 字样 海抖）
+6.apk文件名
+  hd_v1.0.2_2021-01-09_release.apk （版本、日期)
+7.访问 HOST
+  HOST = "http://hdapp.caihvideo.com/videoad/"; (暂定测试)
+  HOST = "http://hdapp.caihvideo.com/videoad/"; (上线)
+  
+8.有关xuanjian,字样，改为haidou
+
+9.改logo等图片 （待王总提供）
+
+10.广告接入
+
+11.支付宝接口
+
+12.图片接口（URL)
+
+13.协议 (URL)
+
+14.分享地址 (URL)
+
+15.实名认证接口
+
+16.上传视频功能 （添加+)
+
+17.加盟 城市服务商 （URL)
+
+18.二维码 （注册、下载)
+
+19.游戏主页
+
+20.爬抖音、快手视频
+
+21.改任务名称 、级别名称、数据值名称
+
+22.商城图片收缩 
+
+23.看广告出现 02006 错误，或无法获取广告 提示
+
+
+
+
+

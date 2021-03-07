@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/xj_background"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_marginTop="35dp"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<com.noober.background.view.BLLinearLayout
+			android:id="@+id/layout_search"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			app:bl_corners_radius="20dp"
+			app:bl_solid_color="@color/xj_btn_bg">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:contentDescription="TODO" android:src="@mipmap/ico_search_white" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp"
+				android:text="宝贝/店铺"
+				android:textColor="@color/white" />
+
+		</com.noober.background.view.BLLinearLayout>
+
+		<ImageView
+			android:id="@+id/iv_scan"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:contentDescription="TODO" android:src="@mipmap/ico_scan" />
+
+	</LinearLayout>
+
+	<net.lucode.hackware.magicindicator.MagicIndicator
+		android:id="@+id/tabLayout"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_45"
+		android:layout_gravity="center_horizontal"
+		android:paddingBottom="@dimen/dp_5"/>
+
+	<com.scwang.smartrefresh.layout.SmartRefreshLayout
+		android:id="@+id/smartRefresh"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<android.support.v4.view.ViewPager
+			android:id="@+id/viewPager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+
+	</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/clickLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="14dp">
+
+                <ImageView
+                    android:id="@+id/order_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="TODO" android:scaleType="centerInside"
+                    tools:background="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/order_icon"
+                    android:singleLine="true"
+                    android:textColor="@color/c_333333"
+                    android:textSize="12sp"
+                    tools:text="菲菲"/>
+
+                <TextView
+                    android:id="@+id/phoneTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/order_icon"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/order_icon"
+                    android:singleLine="true"
+                    android:textColor="@color/c_999999"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:text="1888888888888"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/can_send_flag_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="TODO" android:src="@mipmap/red_trangle"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFF0F8"/>
+
+        <com.yimeng.widget.ExpandListView
+            android:id="@+id/order_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#EFF0F8"
+            android:dividerHeight="1dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFF0F8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="实付："
+                android:textSize="12sp"
+                android:textColor="@color/c_333333"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/totalPriceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_money"
+                android:textSize="12sp"
+                tools:text="￥10003"/>
+
+            <TextView
+                android:id="@+id/returnMoneyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="(返1000元)"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:textColor="@color/c_333333"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sureOrderTV"
+            android:layout_width="70dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:text="确认订单"
+            android:layout_gravity="right"
+            style="@style/btnThemeStyle"
+            android:layout_margin="@dimen/dp_10"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded"/>
+    </LinearLayout>
+
+</LinearLayout>
